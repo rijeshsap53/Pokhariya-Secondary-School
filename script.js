@@ -78,12 +78,15 @@ function down() {
 
 function hid() {
 
-  if(sec !=""|| thi !=""){
+  if(sec.value !=""|| thi.value !=""){
     inform.innerHTML="the password has not been sumbitted";
     warn.style.display="block";
     return;
   }else{
+    
     warn.style.display="none";
+    laa.style.display="none";
+  
   }
 }
 
@@ -109,6 +112,13 @@ window.onclick = function (event) {
   const pag = document.getElementById("login_p");
 
   if (event.target == pag) {
+    if(sec.value !="" || thi.value != ""){
+      inform.innerHTML="the password has not been sumbitted";
+      warn.style.display="block";
+      return;
+    }
     pag.style.visibility = "hidden";
+
+
   }
 };
