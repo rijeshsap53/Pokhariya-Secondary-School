@@ -87,20 +87,20 @@ function hid() {
   }
 }
 
-//  const ok = document.querySelector("#done");
-//  const cancel = document.querySelector("#no");
-//  const box = document.querySelector(".box");
-// const warn2 = document.querySelector(".warning")
+ const ok = document.querySelector("#done");
+ const cancel = document.querySelector("#no");
+ const box = document.querySelector(".box");
+const warn2 = document.querySelector(".warning")
 
 
-//  ok.addEventListener("click", function(){
-//    window.location.reload();
-//  });
+ ok.addEventListener("click", function(){
+   window.location.reload();
+ });
 
-//  cancel.addEventListener("click", function(){
-//    warn2.style.display="none";
-//    reset();
-//  });
+ cancel.addEventListener("click", function(){
+   warn2.style.display="none";
+   reset();
+ });
 
 
 
