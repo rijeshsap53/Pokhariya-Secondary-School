@@ -72,22 +72,38 @@ function down() {
 
 
   // hide
-
+ 
+  
   
 
 function hid() {
 
-  sclose.addEventListener("click", function(){
-    if(sec != "" || thi != ""){
-       inform.innerHTML="the information has not been sumbmitted";
-       warn.style.display = "block";
-       return ;
-    }
-  });
-
-  document.getElementById("login_p").style.visibility = "hidden";
-  document.getElementById("for").reset();
+  if(sec !=""|| thi !=""){
+    inform.innerHTML="the password has not been sumbitted";
+    warn.style.display="block";
+    return;
+  }else{
+    warn.style.display="none";
+  }
 }
+
+//  const ok = document.querySelector("#done");
+//  const cancel = document.querySelector("#no");
+//  const box = document.querySelector(".box");
+// const warn2 = document.querySelector(".warning")
+
+
+//  ok.addEventListener("click", function(){
+//    window.location.reload();
+//  });
+
+//  cancel.addEventListener("click", function(){
+//    warn2.style.display="none";
+//    reset();
+//  });
+
+
+
 
 window.onclick = function (event) {
   const pag = document.getElementById("login_p");
